@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Growcell IT Architect™</title>
+    <title>Internship</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,12 +42,35 @@
         </div>
         <!-- Spinner End -->
 
+        <style>
+            .portfolio-container {
+                visibility: hidden;
+            }
+        </style>
+
+<script>
+    // Function to hide the spinner and show the content
+    function showContent() {
+        document.getElementById('spinner').style.display = 'none'; // Hide spinner
+        document.querySelector('.portfolio-container').style.visibility = 'visible'; // Show content
+    }
+
+    // Wait for the DOM and all resources (images, fonts, etc.) to load
+    window.addEventListener('load', function() {
+        showContent();
+    });
+
+    // Fallback: If the 'load' event doesn't fire (e.g., due to a slow resource), show the content after a timeout
+    setTimeout(function() {
+        showContent();
+    }, 5000); // 5-second timeout as a fallback
+</script>
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                   <!---- <h1 class="m-0">Growcell</h1>-->
+                    <!--<h1 class="m-0">Growcell</h1> -->
                     <img src="img/logo.png" alt="Logo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,419 +78,352 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>    
-                        <!-- <a href="project.html" class="nav-item nav-link">Project</a> -->
-                        
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                      <!--  <a href="project.html" class="nav-item nav-link active">Project</a> -->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Career</a>
                             <div class="dropdown-menu m-0">
-                                <!--<a href="team.html" class="dropdown-item">Our Team</a>-->
-                                <!--<a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
-                                <!--<a href="404.html" class="dropdown-item">404 Page</a>-->
-                                <a href="internship.html" class="dropdown-item">Internships</a>
-                                <a href="soon.html" class="dropdown-item">freelancing</a>
-                               <!-- <a href="soon.html" class="dropdown-item">Jobs</a> -->
+                                <a href="internship.html" class="dropdown-item">internships</a>
+                               <!-- <a href="soon.html" class="dropdown-item">jobs</a> -->
+                                <a href="soon.html" class="dropdown-item">Freelancing</a>
                             </div>
                         </div>
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="comm.html" class="nav-item nav-link">Contact</a>
                     </div>
-                   <!-- <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>  -->
+                    <a href="intern.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Apply for Internship</a>
                 </div>
             </nav>
 
-            <div class="container-xxl bg-primary hero-header">
-                <div class="container px-lg-5">
-                    <div class="row g-5 align-items-end">
+            <div class="container-xxl py-5 bg-primary hero-header">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Contact Us</h1>
+                            <h1 class="text-white animated slideInDown">Internship</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                               
-                            </nav>
+                           <!-- <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+                                </ol>
+                            </nav>-->
                         </div>
-                       
                     </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
-        <style>
-            /* General Styles */
 
-           
-          
-    
-            /* Container */
-            .container {
-                width: 40%;
-                margin: 30px auto;
-                padding: 15px;
-            }
-    
-            /* Header */
-            header {
-                text-align: center;
-                margin-bottom: 20px;
-                color: #fff;
-            }
-    
-            header h1 {
-                font-size: 2em;
-            }
-    
-            header p {
-                font-size: 0.9em;
-            }
-    
-            /* Contact Section */
-            .contact-section {
-                background: #fff;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            /* Contact Form */
-            .contact-form {
-                width: 100%;
-            }
-    
-            .contact-form form {
-                display: flex;
-                flex-direction: column;
-            }
-    
-            .contact-form label {
-                margin-top: 8px;
-                font-weight: bold;
-            }
-    
-            .contact-form input,
-            .contact-form select,
-            .contact-form textarea {
-                width: 100%;
-                padding: 8px;
-                margin-top: 5px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 0.9em;
-            }
-    
-            .contact-form button {
-                background: #4a90e2;
-                color: white;
-                padding: 10px 15px;
-                border: none;
-                border-radius: 5px;
-                margin-top: 12px;
-                cursor: pointer;
-                font-size: 0.9em;
-            }
-    
-            .contact-form button:hover {
-                background: #8e44ad;
-            }
-    
-            /* Response Message */
-            #responseMessage {
-                margin-top: 12px;
-                font-size: 0.9em;
-                text-align: center;
-            }
-    
-            /* Responsive Design */
-            @media (max-width: 1200px) {
-                .container {
-                    width: 50%;
-                }
-            }
-    
-            @media (max-width: 992px) {
-                .container {
-                    width: 60%;
-                }
-    
-                header h1 {
-                    font-size: 1.8em;
-                }
-    
-                header p {
-                    font-size: 0.85em;
-                }
-            }
-    
-            @media (max-width: 768px) {
-                .container {
-                    width: 75%;
-                    margin-top: 20px;
-                }
-    
-                header h1 {
-                    font-size: 1.6em;
-                }
-    
-                header p {
-                    font-size: 0.8em;
-                }
-    
-                .contact-form input,
-                .contact-form select,
-                .contact-form textarea {
-                    padding: 8px;
-                    font-size: 0.85em;
-                }
-    
-                .contact-form button {
-                    padding: 8px 12px;
-                    font-size: 0.85em;
-                }
-            }
-    
-            @media (max-width: 480px) {
-                .container {
-                    width: 90%;
-                    margin-top: 15px;
-                }
-    
-                header h1 {
-                    font-size: 1.5em;
-                }
-    
-                header p {
-                    font-size: 0.8em;
-                }
-    
-                .contact-form input,
-                .contact-form select,
-                .contact-form textarea {
-                    padding: 7px;
-                    font-size: 0.8em;
-                }
-    
-                .contact-form button {
-                    padding: 8px;
-                    font-size: 0.8em;
-                }
-            }
-            .footer .copyright {
-    padding: 25px 0;
-    font-size: 14px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-}
+        <!-- Projects Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Our Popular Internships <span></span></p>
+                    <h1 class="text-center mb-5">Unlock your potential with Growcell Internship program</h1>
+                </div>
+                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 text-center">
+                        <!--<ul class="list-inline mb-5" id="portfolio-flters">
+                            <li class="mx-2 active" data-filter="*">All</li>
+                            <li class="mx-2" data-filter=".first">Web Design</li>
+                            <li class="mx-2" data-filter=".second">Graphic Design</li>
+                        </ul>-->
+                    </div>
+                </div>
 
-.footer .copyright a {
-    color: var(--light);
-}
-
-
-
-        </style>
-    </head>
-    
-    <body>
-        <div class="container">
-           
-            <!-- Contact Form Section -->
-            <div class="container" id="cancellation-policy">
-                <h2>Cancellation & Refund Policy</h2>
-                <p>
-                    <strong>Policy Overview:</strong><br>
-                    At Growcell, we aim to ensure complete satisfaction with our services. However, if you wish to cancel a service or request a refund, the following terms apply:<br><br>
-            
-                    <strong>Cancellation Terms:</strong><br>
-                    1. Cancellations must be requested within 7 days of service initiation.<br>
-                    2. After 7 days, cancellations may not be eligible for a refund.<br>
-                    3. For subscription-based services, cancellation requests must be made before the renewal date to avoid future charges.<br><br>
-            
-                    <strong>Refund Terms:</strong><br>
-                    1. Refunds will be processed within 10-15 business days after approval.<br>
-                    2. Refunds will be credited to the original payment method used during the transaction.<br>
-                    3. No refunds will be provided for partially used services.<br><br>
-            
-                    <strong>Exceptions:</strong><br>
-                    In cases where a service is delayed due to unforeseen circumstances or technical issues, refunds may be considered at the sole discretion of Growcell.<br><br>
-            
-                    <strong>Contact Us:</strong><br>
-                    If you have any questions regarding our Cancellation & Refund Policy, please contact us at <strong>growcellinfo@gmail.com</strong>.
-                </p>
-                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
-                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
-            </div>
-              
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/webd.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                  <!--  <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Web Development</p>
+                                </a>
+                               <!-- <h5 class="lh-base mb-0">Designing, Building, and Elevating Seamless and Interactive Web User Experiences.</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/appmob.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Android Development</p>
+                                </a>
+                             <!--   <h5 class="lh-base mb-0">Innovating through powerful, user-focused Android app development for growth.</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/fullst.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Full-Stack Web Development</p>
+                                </a>
+                              <!--  <h5 class="lh-base mb-0">Developing complete, scalable full-stack solutions for seamless digital transformation.</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/java.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4"><a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Java Developer</p>
+                            </a>
+                             <!--  
+                                <h5 class="lh-base mb-0">Code architect designing and developing powerful applications with Java expertise.</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/python.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a> --->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Python Developer</p>
+                                </a>
+                               <!-- <h5 class="lh-base mb-0">Crafting efficient, scalable, and versatile software solutions using Python expertise.</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/datas.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Data Science</p>
+                                </a> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.12s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/machine.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Machine Learning</p>
+                                </a>
+                               <!-- <h5 class="lh-base mb-0">Empowering Intelligence, Automating Decisions, and Transforming Data into Actionable Insights.</a>  -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.12s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/uiuxp.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">UI/UX</p>
+                                </a>
+                                <!-- <h5 class="lh-base mb-0">Designing Intuitive Interfaces, Enhancing User Journeys, and Delivering Seamless Experiences</a>  -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.12s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/dm.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                   <!-- <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>  -->
+                                    <a class="btn btn-square btn-outline-light mx-1" href="intern.html"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <a href="intern.html" target="_blank">
+                                <p class="text-primary fw-medium mb-2">Digital Marketing</p>
+                                </a>
+                               <!--<h5 class="lh-base mb-0">Crafting Impactful Strategies, Driving Digital Growth, and Maximizing Brand Visibility.</a>  -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    
-        <script>
-            // Handle Form Submission
-            document.getElementById('contactForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-    
-                // Collect Form Data
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const mobile = document.getElementById('mobile').value.trim();
-                const state = document.getElementById('state').value.trim();
-                const business = document.getElementById('business').value.trim();
-                const message = document.getElementById('message').value.trim();
-    
-                if (name && email && mobile && state && business && message) {
-                    // Send Data to Google Sheets
-                    const formData = new FormData();
-                    formData.append('name', name);
-                    formData.append('email', email);
-                    formData.append('mobile', mobile);
-                    formData.append('state', state);
-                    formData.append('business', business);
-                    formData.append('message', message);
-    
-                    fetch('https://script.google.com/macros/s/AKfycbyD7jxgInCmlRNLODRon63Tr92z2QUsSSShkK31w7UtY9AkhBmDhjo4cyunG8lWQaoX_g/exec', {
-                        method: 'POST',
-                        body: formData
-                    })
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data.result === 'success') {
-                                document.getElementById('responseMessage').innerText = 'Thank you! We will get back to you soon.';
-                                document.getElementById('responseMessage').style.color = 'green';
-                                document.getElementById('contactForm').reset();
-                            } else {
-                                document.getElementById('responseMessage').innerText = 'Something went wrong. Please try again.';
-                                document.getElementById('responseMessage').style.color = 'red';
-                            }
-                        })
-                        .catch(error => {
-                            document.getElementById('responseMessage').innerText = 'Error connecting to server.';
-                            document.getElementById('responseMessage').style.color = 'red';
-                        });
-                } else {
-                    document.getElementById('responseMessage').innerText = 'Please fill all fields correctly.';
-                    document.getElementById('responseMessage').style.color = 'red';
-                }
-            });
-
-
-
-
-
-        </script>
-    
-
-         <!-- Footer Start -->
-
-            <style>
-         .footer {
-            background-color: #007bff; /* Primary color */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center; /* Center-align all text */
-          }
-      
-          .footer a {
-            color: #fff;
-            text-decoration: none;
-          }
-      
-          .footer a:hover {
-            text-decoration: underline;
-          }
-      
-          /* Social Media Buttons Container */
-          .social-icons {
-            display: flex;
-            justify-content: center; /* Center icons horizontally */
-            align-items: center; /* Center icons vertically */
-            gap: 10px; /* Space between icons */
-            margin-bottom: 15px; /* Space below icons */
-          }
-      
-          /* Social Media Buttons */
-          .btn-social {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 36px;
-            transition: all 0.3s ease;
-          }
-      
-          .btn-social:hover {
-            background-color: #fff;
-            color: #007bff;
-          }
-      
-          /* Copyright Section */
-          .copyright {
-            font-size: 14px;
-          }
-      
-          /* Mobile Responsive Styles */
-          @media (max-width: 768px) {
-            .footer {
-              padding: 15px 0;
-            }
-      
-            .social-icons {
-              flex-wrap: wrap; /* Wrap icons on small screens */
-            }
-      
-            .btn-social {
-              margin: 5px;
-            }
-          }
-
-
-
-
-        </style>
-      </head>
-      <body>
-        <!-- Your page content goes here -->
-      
-        <!-- Footer -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-          <div class="container px-lg-5">
-            <div class="copyright text-center">
-              <!-- Social Media Icons -->
-              <div class="social-icons">
-                <a class="btn btn-outline-light btn-social" href="https://x.com/growcelldigital?t=5qd5WtL_MvcNW5KDEhtaWg&s=09">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social" href="https://github.com/Growcell-IT-Architect">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/growcell.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/growcell/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-      
-              <!-- Copyright Text -->
-              <div class="col-12 mb-3">
-                &copy; <a class="border-bottom" href="">2024</a>, All Rights Reserved.
-                Designed By <a class="border-bottom" href="https://growcell.in">Growcell IT Architect™</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Projects End -->
         
-          
-         
-           <!-- Footer -->
 
+        <!-- Footer Start -->
+         <!-- Footer Start -->
+         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Motihari,Bihar 845417 </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 95195 53053</p>
+                        <p><i class="fa fa-envelope me-3"></i>growcelldigital@gmail.com<span></span></p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/growcelldigital?t=5qd5WtL_MvcNW5KDEhtaWg&s=09"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://github.com/Growcell-IT-Architect"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/growcell.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/growcell/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="comm.html">Contact Us</a>
+                      <!--  <a class="btn btn-link" href="">Privacy Policy</a> -->
+                        <a class="btn btn-link" href="policy.html">Cancellation Policy</a>
+                        <a class="btn btn-link" href="internship.html">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <!--<p class="section-title text-white h5 mb-4">Company<span></span></p>-->
 
-          
-         
+                        <img src="img/foter.png" class="responsive-foterimage" alt="foter"> 
+                        <p class="text-white pb-3 animated slideInDown">Future-ready IT solutions empowering enterprises with innovation, efficiency, and seamless technology to drive growth, scalability, and digital transformation effortlessly </p>
+                        
+                    </div>
+
+                        <!--<p class="section-title text-white h5 mb-4">Gallery<span></span></p>-->
+                       <!-- <div class="row g-2">
+                            <p class="text-white pb-3 animated slideInDown">Driving innovation, connectivity, intelligence, and transformation to deliver future-ready IT solutions for enterprises.</p>
+                       -->
+                          <!--    <p class="m-0">SEO optimization enhances website visibility using keywords, quality content, backlinks, and technical improvements to boost rankings, drive traffic, and improve user experience.<span></span></p>-->
+                          
+                          <!--  <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>   
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div> -->
+                    
+                  <!--  <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div> -->
+                  <div class="col-md-6 col-lg-3">
+                    <img src="img/design1.jpg" class="responsive-foterimage" alt="foter"> 
+                   <!-- <img src="img/22logo.png"class="responsive-image" alt="MSME-Logo"> 
+                    <img src="img/stpind.png" class="responsive-stepimag" alt="step"> -->
+                    <p class="text-white pb-3 animated slideInDown">Enabling MSMEs & Startups with Cutting-Edge IT Solutions – Innovate, Scale, and Thrive in the Digital Era with Future-Ready Technology.</p>
+                    </div>  
+                  <!--  <div>                        
+                        <img src="img/stpind.png" class="responsive-stepimag" alt="step">
+                    </div>  -->
+                  <!--  <div class="col-md-6 col-lg-3">
+                       <p class="section-title text-white h5 mb-4">Newsletter   prev<span></span></p>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3"> 
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;"> 
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button> 
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright"> 
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="">2024</a>, All Right Reserved. 
+							
+							<!--/***  Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://growcell.in">Growcell IT Architect™</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                              <!--  <a href="">Cookies</a> -->
+                                <a href="comm.html">Help</a>
+                                <a href="faq.html">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer End -->
 
 
+        <!-- Footer End -->
 
 
         <!-- Back to Top -->
@@ -488,11 +444,8 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
- 
-
+    
+    
 </body>
-
-
-
 
 </html>
