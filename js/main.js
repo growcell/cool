@@ -135,3 +135,24 @@ document.querySelectorAll('img').forEach(function(img) {
         event.preventDefault();
     });
 });
+
+
+<script>
+    // Open Terms Modal
+    function openTermsModal() {
+        document.getElementById("termsModal").style.display = "block";
+    }
+
+    // Close Terms Modal
+    function closeTermsModal() {
+        document.getElementById("termsModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside the modal
+    window.onclick = function (event) {
+        var modal = document.getElementById("termsModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
