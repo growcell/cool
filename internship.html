@@ -42,6 +42,29 @@
         </div>
         <!-- Spinner End -->
 
+        <style>
+            .portfolio-container {
+                visibility: hidden;
+            }
+        </style>
+
+<script>
+    // Function to hide the spinner and show the content
+    function showContent() {
+        document.getElementById('spinner').style.display = 'none'; // Hide spinner
+        document.querySelector('.portfolio-container').style.visibility = 'visible'; // Show content
+    }
+
+    // Wait for the DOM and all resources (images, fonts, etc.) to load
+    window.addEventListener('load', function() {
+        showContent();
+    });
+
+    // Fallback: If the 'load' event doesn't fire (e.g., due to a slow resource), show the content after a timeout
+    setTimeout(function() {
+        showContent();
+    }, 5000); // 5-second timeout as a fallback
+</script>
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
@@ -389,7 +412,7 @@
                             <div class="footer-menu">
                                 <a href="index.html">Home</a>
                               <!--  <a href="">Cookies</a> -->
-                                <a href="10.html">Help</a>
+                                <a href="comm.html">Help</a>
                                 <a href="faq.html">FQAs</a>
                             </div>
                         </div>
