@@ -95,6 +95,195 @@
     <!-- Navbar & Hero End -->
 
      
+    <style>
+        
+.container2 {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+            
+
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #6222CC;
+            font-weight: 600;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 6px;
+            background: #f8f9fa;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border: 2px solid #6222CC;
+        }
+
+        .radio-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+       
+
+        .terms-inline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                max-width: 100%;
+                padding: 20px;
+            }
+        }
+
+        /* Popup Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Checkmark Animation */
+        .checkmark-container {
+            width: 60px;
+            height: 60px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            animation: popIn 0.3s ease-out;
+        }
+
+        .checkmark {
+            width: 25px;
+            height: 45px;
+            border-width: 0 6px 6px 0;
+            border-style: solid;
+            border-color: white;
+            transform: rotate(45deg);
+            animation: drawCheck 0.4s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes drawCheck {
+            0% {
+                height: 0;
+                width: 0;
+                opacity: 0;
+            }
+
+            100% {
+                height: 45px;
+                width: 25px;
+                opacity: 1;
+            }
+        }
+
+        .close-btn {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #e04343;
+        }
+
+
+        .register-btn {
+            margin-top: 15px;
+            width: 100%;
+            background: rgb(208, 223, 37);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .register-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
     <div class="container2">
         <div class="banner">
             <img src="img/logoform.jpg" alt="Company Banner">
@@ -166,7 +355,8 @@
                 <label for="terms">I agree to the terms and conditions</label>
             </div>
 
-            <button1 type="submit">Register</button1>
+            <button type="submit" class="register-btn">Register</button>
+            
         </form>
     </div>
 
@@ -306,182 +496,6 @@ document.getElementById("internshipForm").addEventListener("submit", function (e
     }
 });
     </script>
-
-        <style>
-          
-
-        .banner img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #6222CC;
-            font-weight: 600;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-            text-align: left;
-        }
-
-        input,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 6px 0;
-            border: none;
-            border-radius: 6px;
-            background: #f8f9fa;
-            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-            font-size: 14px;
-        }
-
-        input:focus,
-        select:focus {
-            outline: none;
-            border: 2px solid #6222CC;
-        }
-
-        .radio-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            width: auto;
-            margin-right: 5px;
-        }
-
-        button1 {
-            width: 30%;
-            background: rgb(208, 223, 37);
-            justify-content: center;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        button1:hover {
-            background: rgb(27, 210, 18);
-        }
-
-        .terms-inline {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            justify-content: flex-start;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                max-width: 100%;
-                padding: 20px;
-            }
-        }
-
-        /* Popup Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .modal-content {
-            background-color: #fff;
-            margin: 15% auto;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-            position: relative;
-        }
-
-        /* Checkmark Animation */
-        .checkmark-container {
-            width: 60px;
-            height: 60px;
-            background-color: #4CAF50;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 15px;
-            animation: popIn 0.3s ease-out;
-        }
-
-        .checkmark {
-            width: 25px;
-            height: 45px;
-            border-width: 0 6px 6px 0;
-            border-style: solid;
-            border-color: white;
-            transform: rotate(45deg);
-            animation: drawCheck 0.4s ease-out 0.3s forwards;
-            opacity: 0;
-        }
-
-        @keyframes popIn {
-            0% {
-                transform: scale(0);
-            }
-
-            80% {
-                transform: scale(1.2);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes drawCheck {
-            0% {
-                height: 0;
-                width: 0;
-                opacity: 0;
-            }
-
-            100% {
-                height: 45px;
-                width: 25px;
-                opacity: 1;
-            }
-        }
-
-        .close-btn {
-            background-color: #ff4d4d;
-            color: white;
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .close-btn:hover {
-            background-color: #e04343;
-        }
-
-</style>
-        <!-- 404 End -->
-
        
 
         <!-- Footer Start -->

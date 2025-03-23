@@ -51,6 +51,7 @@ h6,
 
 
 /*** Button ***/
+
 .btn {
     font-weight: 500;
     transition: .5s;
@@ -65,7 +66,7 @@ h6,
     height: 38px;
 }
 
-.btn-sm-square {
+.btn1-sm-square {
     width: 32px;
     height: 32px;
 }
