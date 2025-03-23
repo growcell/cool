@@ -612,3 +612,72 @@ h6,
 
 
 
+body1 {
+    font-family: 'Poppins', sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+.container1 {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+h2 {
+color: #4CAF50;
+text-align: center;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+p {
+line-height: 1.8;
+font-size: 14px;
+color: #333;
+}
+
+strong {
+color: #6222CC;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.container {
+padding: 20px;
+}
+
+h2 {
+font-size: 20px;
+}
+
+p {
+font-size: 13px;
+line-height: 1.6;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+padding: 15px;
+}
+
+h2 {
+font-size: 18px;
+}
+
+p {
+font-size: 12px;
+}
+}
+
+
+
