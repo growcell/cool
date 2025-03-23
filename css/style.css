@@ -680,4 +680,12 @@ font-size: 12px;
 }
 
 
-
+.container2 {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
