@@ -93,7 +93,7 @@
 })(jQuery);
 
 document.addEventListener('copy', function(event) {
-    event.clipboardData.setData('text/plain', 'we are developer bro');
+    event.clipboardData.setData('text/plain', 'https://www.growcell.in/');
     event.preventDefault();
 })
 
@@ -102,6 +102,6 @@ document.addEventListener('copy', function(event) {
 document.querySelectorAll('input, textarea').forEach(function(input) {
     input.addEventListener('paste', function(event) {
       event.preventDefault();
-      alert('Pasting is not allowed in this field!');
+      alert('Pasting is not allowed');
     });
   });
